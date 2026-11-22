@@ -1,0 +1,27 @@
+{
+  "source": "MX-28_Arm-mk2.stl",
+  "triangles": 464914,
+  "unique_vertices": 226913,
+  "components_exact_vertex_connectivity": 82,
+  "bounds": [
+    [
+      -3.1449203491210938,
+      -26.222379684448242,
+      -3.9000000953674316
+    ],
+    [
+      193.85057067871094,
+      327.15228271484375,
+      280.136962890625
+    ]
+  ],
+  "size": [
+    196.99549102783203,
+    353.374662399292,
+    284.03696298599243
+  ],
+  "units": "unspecified in STL",
+  "edge_closed_components": 69,
+  "zero_area_triangles": 0,
+  "note": "Disconnected shells are not automatically mechanical parts or articulated links. Edge closure alone does not guarantee printability."
+}

@@ -1,0 +1,22 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+# Python
+__pycache__/
+*.pyc
+.venv*/
+venv/
+# Arduino / PlatformIO
+.pio/
+*.hex
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+# Area sementara
+_to_delete/
+# File besar: simpan via Git LFS atau di luar git
+99_archive/original_downloads/
+*.obj

@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<!--
+  ax12_arm.urdf.xacro — Lengan 5-DOF (5x AX-12A) + gripper servo 25 kg DS3225 (WidowX hybrid base)
+
+  Pose nol (semua sendi = 0): lengan lurus ke atas ("candle pose").
+  Panjang di bawah DIAMBIL DARI CAD (01_design/cad_scripts/build_full_robot_package.py &
+  build_gripper_ds3225.py), belum diverifikasi pada robot fisik -> ukur ulang setelah dirakit.
+  Visual sementara memakai primitif (kotak = servo, balok = link).
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ax12_arm">
+
+  <!-- ===================== Dimensi (meter) — dari CAD, verifikasi setelah rakit ===================== -->
+  <xacro:property name="base_to_yaw_z"     value="0.085"/>   <!-- meja -> muka horn servo base (ID1) -->
+  <xacro:property name="yaw_to_shoulder_z" value="0.04403"/> <!-- horn base -> sumbu bahu (z 129.03 mm) -->
+  <xacro:property name="upper_arm_len"     value="0.09206"/> <!-- sumbu bahu -> sumbu siku (link f4_n_f3) -->
+  <xacro:property name="forearm_len"       value="0.09206"/> <!-- sumbu siku -> sumbu wrist pitch -->
+  <xacro:property name="wrist_to_roll_z"   value="0.0657"/>  <!-- sumbu wrist pitch -> muka horn wrist roll (ID5) -->
+  <xacro:property name="roll_to_gripper_z" value="0.0505"/>  <!-- muka horn wrist roll -> bawah plat gripper -->
+  <xacro:property name="finger_len"        value="0.054"/>   <!-- atas plat -> ujung jari -->
+  <xacro:property name="tcp_z"             value="0.035"/>   <!-- bawah plat -> titik jepit tengah jari -->
+  <xacro:property name="finger_travel"     value="0.0126"/>  <!-- gerak maks per jari (perkiraan, crank R8) -->
+  <xacro:property name="finger_per_rad"    value="0.008"/>   <!-- m gerak jari per rad horn gripper -->
+  <xacro:property name="gripper_range"     value="${pi/2}"/> <!-- 1000..2000 us = 90 derajat -->
+
+  <!-- Servo gripper DS3225: 40 x 20 x 40.5 mm, ~67 g -->
+  <xacro:property name="ds_l" value="0.040"/>
+  <xacro:property name="ds_w" value="0.020"/>
+  <xacro:property name="ds_h" value="0.0405"/>
+  <xacro:property name="ds_mass" value="0.067"/>
+
+  <!-- AX-12A: 32 x 50 x 40 mm, 54.6 g, stall 1.5 N.m @12V, 0..300 derajat -->
+  <xacro:property name="ax_w" value="0.032"/>
+  <xacro:property name="ax_h" value="0.050"/>
+  <xacro:property name="ax_d" value="0.040"/>
+  <xacro:property name="ax_mass" value="0.0546"/>
+  <xacro:property name="ax_lim" value="${radians(150)}"/>
+  <xacro:property name="ax_effort" value="1.5"/>
+  <xacro:property name="ax_vel" value="5.0"/>
+
+  <!-- ===================== Material ===================== -->
+  <material name="servo_black"><color rgba="0.12 0.12 0.13 1"/></material>
+  <material name="pla_blue"><color rgba="0.12 0.45 0.80 1"/></material>
+  <material name="base_green"><color rgba="0.06 0.50 0.35 1"/></material>
+  <material name="deck_orange"><color rgba="0.80 0.45 0.12 1"/></material>
+
+  <!-- ===================== Macro ===================== -->
+  <xacro:macro name="box_inertia" params="m x y z">
+    <inertial>
+      <mass value="${m}"/>
+      <inertia ixx="${m*(y*y+z*z)/12}" ixy="0" ixz="0"
+               iyy="${m*(x*x+z*z)/12}" iyz="0"
+               izz="${m*(x*x+y*y)/12}"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- Satu link berisi: servo (kotak) + batang rangka (silinder) sepanjang +Z -->
+  <xacro:macro name="arm_link" params="name length mass">
+    <link name="${name}">
+      <visual>
+        <origin xyz="0 0 ${length/2}" rpy="0 0 0"/>
+        <geometry><box size="0.028 0.044 ${length}"/></geometry>
+        <material name="pla_blue"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${length/2}" rpy="0 0 0"/>
+        <geometry><box size="0.028 0.044 ${length}"/></geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 ${length/2}" rpy="0 0 0"/>
+        <mass value="${mass}"/>
+        <inertia ixx="${mass*length*length/12}" ixy="0" ixz="0"
+                 iyy="${mass*length*length/12}" iyz="0" izz="${mass*0.0004}"/>
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="servo_visual" params="name parent xyz rpy">
+    <joint name="${name}_fixed" type="fixed">
+      <parent link="${parent}"/><child link="${name}"/>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+    </joint>
+    <link name="${name}">
+      <visual>
+        <geometry><box size="${ax_w} ${ax_d} ${ax_h}"/></geometry>
+        <material name="servo_black"/>
+      </visual>
+      <collision><geometry><box size="${ax_w} ${ax_d} ${ax_h}"/></geometry></collision>
+      <xacro:box_inertia m="${ax_mass}" x="${ax_w}" y="${ax_d}" z="${ax_h}"/>
+    </link>
+  </xacro:macro>
+
+  <!-- ===================== Base ===================== -->
+  <link name="world"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/><child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.040" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.095" length="0.080"/></geometry>
+      <material name="base_green"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.0835" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.056" length="0.007"/></geometry>
+      <material name="deck_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0435" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.095" length="0.087"/></geometry>
+    </collision>
+    <xacro:box_inertia m="0.40" x="0.19" y="0.19" z="0.087"/>
+  </link>
+
+  <xacro:servo_visual name="servo1" parent="base_link" xyz="0 0 ${base_to_yaw_z - ax_h/2}" rpy="0 0 0"/>
+
+  <!-- ===================== Rantai sendi ===================== -->
+  <joint name="joint1_base_yaw" type="revolute">
+    <parent link="base_link"/><child link="link1_turntable"/>
+    <origin xyz="0 0 ${base_to_yaw_z}" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="${-ax_lim}" upper="${ax_lim}" effort="${ax_effort}" velocity="${ax_vel}"/>
+  </joint>
+  <xacro:arm_link name="link1_turntable" length="${yaw_to_shoulder_z}" mass="0.03"/>
+  <xacro:servo_visual name="servo2" parent="link1_turntable" xyz="0 0 ${yaw_to_shoulder_z}" rpy="0 0 0"/>
+
+  <joint name="joint2_shoulder" type="revolute">
+    <parent link="link1_turntable"/><child link="link2_upper_arm"/>
+    <origin xyz="0 0 ${yaw_to_shoulder_z}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="${-ax_lim}" upper="${ax_lim}" effort="${ax_effort}" velocity="${ax_vel}"/>
+  </joint>
+  <xacro:arm_link name="link2_upper_arm" length="${upper_arm_len}" mass="0.04"/>
+  <xacro:servo_visual name="servo3" parent="link2_upper_arm" xyz="0 0 ${upper_arm_len}" rpy="0 0 0"/>
+
+  <joint name="joint3_elbow" type="revolute">
+    <parent link="link2_upper_arm"/><child link="link3_forearm"/>
+    <origin xyz="0 0 ${upper_arm_len}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="${-ax_lim}" upper="${ax_lim}" effort="${ax_effort}" velocity="${ax_vel}"/>
+  </joint>
+  <xacro:arm_link name="link3_forearm" length="${forearm_len}" mass="0.04"/>
+  <xacro:servo_visual name="servo4" parent="link3_forearm" xyz="0 0 ${forearm_len}" rpy="0 0 0"/>
+
+  <joint name="joint4_wrist_pitch" type="revolute">
+    <parent link="link3_forearm"/><child link="link4_wrist"/>
+    <origin xyz="0 0 ${forearm_len}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="${-ax_lim}" upper="${ax_lim}" effort="${ax_effort}" velocity="${ax_vel}"/>
+  </joint>
+  <xacro:arm_link name="link4_wrist" length="${wrist_to_roll_z}" mass="0.03"/>
+  <xacro:servo_visual name="servo5" parent="link4_wrist" xyz="0 0 ${wrist_to_roll_z - ax_h/2}" rpy="0 0 0"/>
+
+  <joint name="joint5_wrist_roll" type="revolute">
+    <parent link="link4_wrist"/><child link="link5_wrist_rotate"/>
+    <origin xyz="0 0 ${wrist_to_roll_z}" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="${-ax_lim}" upper="${ax_lim}" effort="${ax_effort}" velocity="${ax_vel}"/>
+  </joint>
+  <xacro:arm_link name="link5_wrist_rotate" length="${roll_to_gripper_z}" mass="0.02"/>
+  <!-- Servo gripper DS3225 di dalam cradle (09), poros segaris sumbu wrist roll, bodi offset 10 mm -->
+  <joint name="servo6_ds3225_fixed" type="fixed">
+    <parent link="link5_wrist_rotate"/><child link="servo6_ds3225"/>
+    <origin xyz="0 0.010 ${roll_to_gripper_z - 0.003 - ds_h/2}" rpy="0 0 0"/>
+  </joint>
+  <link name="servo6_ds3225">
+    <visual>
+      <geometry><box size="${ds_w} ${ds_l} ${ds_h}"/></geometry>
+      <material name="servo_black"/>
+    </visual>
+    <collision><geometry><box size="${ds_w} ${ds_l} ${ds_h}"/></geometry></collision>
+    <xacro:box_inertia m="${ds_mass}" x="${ds_w}" y="${ds_l}" z="${ds_h}"/>
+  </link>
+
+  <!-- ===================== Gripper ===================== -->
+  <joint name="gripper_base_fixed" type="fixed">
+    <parent link="link5_wrist_rotate"/><child link="link6_gripper_base"/>
+    <origin xyz="0 0 ${roll_to_gripper_z}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Sudut horn servo PWM gripper (rad, 0 = tertutup). Tanpa feedback: nilai = perintah. -->
+  <joint name="joint6_gripper" type="revolute">
+    <parent link="link6_gripper_base"/><child link="gripper_horn"/>
+    <origin xyz="0 0 -0.002" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0.0" upper="${gripper_range}" effort="2.4" velocity="5.0"/>
+  </joint>
+  <link name="gripper_horn">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+      <geometry><cylinder radius="0.010" length="0.003"/></geometry>
+      <material name="servo_black"/>
+    </visual>
+    <inertial>
+      <mass value="0.002"/>
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
+    </inertial>
+  </link>
+
+  <link name="link6_gripper_base">
+    <visual>
+      <origin xyz="0 0 0.0025" rpy="0 0 0"/>
+      <geometry><box size="0.058 0.104 0.005"/></geometry>
+      <material name="pla_blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0025" rpy="0 0 0"/>
+      <geometry><box size="0.058 0.104 0.005"/></geometry>
+    </collision>
+    <xacro:box_inertia m="0.02" x="0.058" y="0.104" z="0.005"/>
+  </link>
+
+  <xacro:macro name="finger" params="side sign">
+    <joint name="finger_${side}_joint" type="prismatic">
+      <parent link="link6_gripper_base"/><child link="finger_${side}"/>
+      <origin xyz="0 ${sign*0.008} 0.005" rpy="0 0 0"/>
+      <axis xyz="0 ${sign} 0"/>
+      <limit lower="0.0" upper="${finger_travel}" effort="10" velocity="0.1"/>
+      <mimic joint="joint6_gripper" multiplier="${finger_per_rad}" offset="0"/>
+    </joint>
+    <link name="finger_${side}">
+      <visual>
+        <origin xyz="0 ${sign*0.004} ${finger_len/2}" rpy="0 0 0"/>
+        <geometry><box size="0.030 0.008 ${finger_len}"/></geometry>
+        <material name="pla_blue"/>
+      </visual>
+      <collision>
+        <origin xyz="0 ${sign*0.004} ${finger_len/2}" rpy="0 0 0"/>
+        <geometry><box size="0.030 0.008 ${finger_len}"/></geometry>
+      </collision>
+      <xacro:box_inertia m="0.01" x="0.030" y="0.008" z="${finger_len}"/>
+    </link>
+  </xacro:macro>
+  <xacro:finger side="left"  sign="1"/>
+  <xacro:finger side="right" sign="-1"/>
+
+  <!-- Titik kerja (TCP) di antara ujung jari, berguna untuk IK & kalibrasi kamera -->
+  <joint name="tcp_joint" type="fixed">
+    <parent link="link6_gripper_base"/><child link="tcp"/>
+    <origin xyz="0 0 ${tcp_z}" rpy="0 0 0"/>
+  </joint>
+  <link name="tcp"/>
+
+</robot>

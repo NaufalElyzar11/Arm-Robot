@@ -1,0 +1,8 @@
+# Urutan sendi = urutan ID servo 1..6 = urutan nilai di protokol firmware
+joints:
+  - joint1_base_yaw
+  - joint2_shoulder
+  - joint3_elbow
+  - joint4_wrist_pitch
+  - joint5_wrist_roll
+  - joint6_gripper

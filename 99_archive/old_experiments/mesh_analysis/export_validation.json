@@ -1,0 +1,11 @@
+{
+  "stl_files": 82,
+  "source_triangles": 464914,
+  "exported_triangles": 464914,
+  "binary_triangle_records_preserved_exactly": true,
+  "obj_counts": {
+    "o": 82,
+    "v": 226913,
+    "f": 464914
+  }
+}

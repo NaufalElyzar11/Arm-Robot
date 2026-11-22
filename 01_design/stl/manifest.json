@@ -1,0 +1,128 @@
+[
+  {
+    "id": "01_base_legs_widowx_hybrid",
+    "stl_file": "01_base_legs_widowx_hybrid_x1.stl",
+    "step_file": "01_base_legs_widowx_hybrid.step",
+    "qty": "x1",
+    "size_mm": "190.0 x 190.0 x 80.0",
+    "watertight": true,
+    "description": "Base Bawah Oktagonal Lebar WidowX (190x190x80 mm)"
+  },
+  {
+    "id": "02_base_turn_table_bot_widowx",
+    "stl_file": "02_base_turn_table_bot_widowx_x1.stl",
+    "step_file": "02_base_turn_table_bot_widowx.step",
+    "qty": "x1",
+    "size_mm": "112.0 x 112.0 x 7.0",
+    "watertight": true,
+    "description": "Deck Atas Turntable Model Oktagonal WidowX (112x112x7 mm)"
+  },
+  {
+    "id": "02b_base_turn_table_bot_original",
+    "stl_file": "02b_base_turn_table_bot_original_x1_opsional.stl",
+    "step_file": "02b_base_turn_table_bot_original.step",
+    "qty": "x1_opsional",
+    "size_mm": "60.0 x 78.25 x 7.0",
+    "watertight": true,
+    "description": "Deck Atas Turntable Kotak Asli (60x78.25x7 mm - Cadangan)"
+  },
+  {
+    "id": "03_base_widowx_outer_pillars",
+    "stl_file": "03_base_widowx_outer_pillars_x1set.stl",
+    "step_file": "03_base_widowx_outer_pillars.step",
+    "qty": "x1set",
+    "size_mm": "98.0 x 46.0 x 75.0",
+    "watertight": true,
+    "description": "4 Tiang Luar Oktagonal WidowX (Tinggi 75 mm)"
+  },
+  {
+    "id": "04_base_turn_table_spacer",
+    "stl_file": "04_base_turn_table_spacer_x1.stl",
+    "step_file": "04_base_turn_table_spacer.step",
+    "qty": "x1",
+    "size_mm": "22.0 x 21.78 x 2.5",
+    "watertight": true,
+    "description": "Spacer Horn Servo Base (\u00d822x2.5 mm)"
+  },
+  {
+    "id": "05_base_turn_table",
+    "stl_file": "05_base_turn_table_x1.stl",
+    "step_file": "05_base_turn_table.step",
+    "qty": "x1",
+    "size_mm": "56.0 x 55.59 x 20.7",
+    "watertight": true,
+    "description": "Meja Putar Base + Dudukan Servo Bahu (\u00d856x20.7 mm)"
+  },
+  {
+    "id": "06_f4_n_f3_arm_link",
+    "stl_file": "06_f4_n_f3_arm_link_x2.stl",
+    "step_file": "06_f4_n_f3_arm_link.step",
+    "qty": "x2",
+    "size_mm": "48.0 x 91.63 x 28.61",
+    "watertight": false,
+    "description": "Lengan Utama Bahu-Siku & Siku-Pergelangan (Cetak 2x)"
+  },
+  {
+    "id": "07_servo_hinge_flange",
+    "stl_file": "07_servo_hinge_flange_x3.stl",
+    "step_file": "07_servo_hinge_flange.step",
+    "qty": "x3",
+    "size_mm": "6.5 x 20.0 x 19.94",
+    "watertight": true,
+    "description": "Flange Engsel Belakang Servo Bahu/Siku/Wrist (Cetak 3x)"
+  },
+  {
+    "id": "08_wrist",
+    "stl_file": "08_wrist_x1.stl",
+    "step_file": "08_wrist.step",
+    "qty": "x1",
+    "size_mm": "48.22 x 54.71 x 42.96",
+    "watertight": true,
+    "description": "Bracket Pergelangan Tangan Pitch-ke-Roll (48.2x54.7x43 mm)"
+  },
+  {
+    "id": "09_gripper_cradle_ds3225",
+    "stl_file": "09_gripper_cradle_ds3225_x1.stl",
+    "step_file": "09_gripper_cradle_ds3225.step",
+    "qty": "x1",
+    "size_mm": "24.0 x 57.0 x 34.0",
+    "watertight": true,
+    "description": "Dudukan Servo 25kg: dibaut ke horn wrist roll, menyangga kuping servo"
+  },
+  {
+    "id": "10_gripper_base_ds3225",
+    "stl_file": "10_gripper_base_ds3225_x1.stl",
+    "step_file": "10_gripper_base_ds3225.step",
+    "qty": "x1",
+    "size_mm": "104.4 x 59.5 x 18.0",
+    "watertight": true,
+    "description": "Plat Gripper + kaki ke kuping servo 25kg (modifikasi the_crawer_base)"
+  },
+  {
+    "id": "11_the_crawer_lever",
+    "stl_file": "11_the_crawer_lever_x2.stl",
+    "step_file": "11_the_crawer_lever.step",
+    "qty": "x2",
+    "size_mm": "33.13 x 10.38 x 5.5",
+    "watertight": true,
+    "description": "Tuas Penghubung Horn Gripper (Cetak 2x - Kiri & Kanan, tidak berubah)"
+  },
+  {
+    "id": "11b_horn_adapter_25t",
+    "stl_file": "11b_horn_adapter_25t_x1.stl",
+    "step_file": "11b_horn_adapter_25t.step",
+    "qty": "x1",
+    "size_mm": "24.0 x 24.0 x 3.0",
+    "watertight": true,
+    "description": "Adapter horn disc aluminium 25T -> pin tuas R8 (pengganti horn AX-12A)"
+  },
+  {
+    "id": "12_the_crawer_finger",
+    "stl_file": "12_the_crawer_finger_x2.stl",
+    "step_file": "12_the_crawer_finger.step",
+    "qty": "x2",
+    "size_mm": "62.9 x 31.2 x 40.82",
+    "watertight": true,
+    "description": "Jari Penjepit Gripper (Cetak 2x - Kiri & Kanan)"
+  }
+]

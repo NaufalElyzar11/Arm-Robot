@@ -1,0 +1,25 @@
+{
+  "ros_distro": "jazzy",
+  "platform": "WSL Ubuntu-24.04",
+  "joint_state_messages": 259,
+  "tf_messages": 165,
+  "all_six_joints_move": true,
+  "observed_joint_excursions_rad": [
+    0.8297472856319656,
+    0.49784837137917937,
+    0.9956967427583587,
+    0.49784837137917937,
+    0.9956967427583587,
+    0.5805144012572013
+  ],
+  "tf_children": [
+    "finger_link",
+    "forearm_link",
+    "hand_link",
+    "upper_link",
+    "wrist_link",
+    "yaw_link"
+  ],
+  "hardware_commands_sent": false,
+  "passed": true
+}

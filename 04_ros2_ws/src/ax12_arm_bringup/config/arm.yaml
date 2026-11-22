@@ -1,0 +1,23 @@
+# Parameter driver. Isi dari hasil kalibrasi (06_docs/calibration.md).
+ax12_driver:
+  ros__parameters:
+    port: /dev/ttyUSB0          # adapter USB-TTL di WSL (setelah usbipd attach)
+    baud: 115200
+    joint_names:                # 5 AX-12A (ID 1..5) + gripper servo PWM 25 kg
+      - joint1_base_yaw
+      - joint2_shoulder
+      - joint3_elbow
+      - joint4_wrist_pitch
+      - joint5_wrist_roll
+      - joint6_gripper
+    zero_raw:  [512, 512, 512, 512, 512]   # raw AX saat sendi = 0 rad (pose tegak lurus ke atas)
+    direction: [1, 1, 1, 1, 1]             # ubah ke -1 bila arah putar terbalik dari RViz
+    # Gripper DS3225 (PWM, tanpa feedback). Sudut 0 rad = jari tertutup.
+    gripper_zero_us: 1000                  # pulsa saat jari tertutup (harus sama dgn firmware GRIP_US_*)
+    gripper_direction: 1                   # -1 bila pulsa naik = menutup
+    gripper_deg_per_2000us: 180.0          # DS3225-180: 500..2500 us = 180 derajat (versi 270: isi 270)
+    gripper_us_min: 1000                   # = GRIP_US_MIN firmware
+    gripper_us_max: 2000                   # = GRIP_US_MAX firmware
+    fake_speed_rad_s: 1.0
+    low_voltage_warn: 10.8
+    temperature_warn_c: 60

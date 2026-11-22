@@ -1,0 +1,26 @@
+item,qty,status,catatan
+DYNAMIXEL AX-12A,5,ada,ID 1-5; joint mode
+Servo 25 kg DS3225-class (180 derajat),1,ada,gripper; PWM 500-2500 us; 4.8-6.8 V
+Horn aluminium bulat 25T Ø20 (4x M3 PCD 14),1,perlu,servo arm bawaan DS3225 tidak dipakai
+Buck converter 6.0 V >=5 A,1,perlu,daya servo gripper dari LiPo 3S
+Kabel 3-pin AX (Molex),6+,cek,daisy-chain + ke shield
+Arduino Mega 2560,1,ada,
+DYNAMIXEL Shield (ROBOTIS),1,ada,jumper VIN dilepas
+Adapter USB-TTL 5V (CP2102/CH340/FTDI),1,perlu,link laptop ke Serial1 Mega
+LiPo 3S 3300 mAh,1,ada,
+Alarm / checker tegangan LiPo,1,perlu,low-voltage warning
+Konektor XT60 pasangan,1,cek,
+Saklar daya >=10 A,1,perlu,mudah dijangkau (darurat)
+Sekring blade 10 A + holder,1,perlu,
+Kapasitor elektrolit 1000-2200 uF 25 V,1,perlu,di PCB daya dekat konektor servo
+Kabel silikon 18 AWG,1 m,perlu,jalur utama baterai
+PCB distribusi daya,1,desain,lihat power_pcb/
+Plat/boks dudukan elektronik,1,desain,lihat 01_design/README.md TODO
+Baut M3x30 + mur M3,4,perlu,plat gripper - kuping servo - cradle
+Ring M3 (washer),8,perlu,shim tinggi plat gripper (0-2 mm)
+Baut M3x6 kepala countersunk (flat),4,perlu,adapter 11b ke horn disc
+Baut M2x6 socket/pan + ring,4,perlu,cradle 09 ke horn AX-12A wrist roll
+Sekrup M2.5x12 + spacer 3 mm,2,perlu,pin tuas 11 di adapter 11b (lihat 01_design/README.md)
+Filamen PLA,~0.5 kg,cek,perkiraan; cek di slicer
+Baut M2/M2.5/M3 lain,set,cek,sesuai part Thingiverse 166430
+Kamera USB (opsional),1,opsional,untuk fase vision

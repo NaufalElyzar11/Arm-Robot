@@ -1,0 +1,76 @@
+{
+  "assumptions": [
+    "Static straight horizontal chain; motor COM approximated at joint axis.",
+    "No printed frame, horns, bearings, cables, fasteners, finger mass or payload.",
+    "No acceleration, friction, joint COM offsets or counterbalance.",
+    "Reference lengths from Interbotix Xacro; not measured from user STL.",
+    "Compact dimensions are a study scenario, not a confirmed fitting assembly."
+  ],
+  "AX12A_screening_torque_Nm": 0.3,
+  "screening_note": "One fifth of published stall at 12 V; not a continuous torque guarantee.",
+  "sources": [
+    "https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/",
+    "https://towerpro.com.tw/product/mg90s-3/",
+    "../reference_widowx/widowx_arm_description/urdf/widowx.urdf.xacro"
+  ],
+  "scenarios": [
+    {
+      "scenario": "WidowX-length chain with AX12A substituted",
+      "shoulder_to_gripper_servo_m": 0.406531944654061,
+      "distal_servo_mass_kg": 0.1772,
+      "shoulder_torque_servos_only_Nm": 0.48492225563438324,
+      "elbow_torque_servos_only_Nm": 0.22416907517999998,
+      "point_masses": [
+        {
+          "name": "elbow_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.15000194465406105
+        },
+        {
+          "name": "wrist_pitch_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.292031944654061
+        },
+        {
+          "name": "wrist_roll_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.363531944654061
+        },
+        {
+          "name": "gripper_MG90S",
+          "mass_kg": 0.0134,
+          "shoulder_horizontal_distance_m": 0.406531944654061
+        }
+      ]
+    },
+    {
+      "scenario": "Compact study 60+60+45+35 mm",
+      "shoulder_to_gripper_servo_m": 0.19999999999999998,
+      "distal_servo_mass_kg": 0.1772,
+      "shoulder_torque_servos_only_Nm": 0.21108177,
+      "elbow_torque_servos_only_Nm": 0.10678185,
+      "point_masses": [
+        {
+          "name": "elbow_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.06
+        },
+        {
+          "name": "wrist_pitch_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.12
+        },
+        {
+          "name": "wrist_roll_AX12A",
+          "mass_kg": 0.0546,
+          "shoulder_horizontal_distance_m": 0.16499999999999998
+        },
+        {
+          "name": "gripper_MG90S",
+          "mass_kg": 0.0134,
+          "shoulder_horizontal_distance_m": 0.19999999999999998
+        }
+      ]
+    }
+  ]
+}

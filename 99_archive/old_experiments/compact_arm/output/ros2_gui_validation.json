@@ -1,0 +1,14 @@
+{
+  "slider_started_offscreen": true,
+  "joint_state_messages": 65,
+  "joint_names": [
+    "base_yaw",
+    "shoulder_pitch",
+    "elbow_pitch",
+    "wrist_pitch",
+    "wrist_roll",
+    "gripper"
+  ],
+  "rviz_visual_check": false,
+  "hardware_commands_sent": false
+}

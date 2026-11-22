@@ -1,0 +1,15 @@
+# Pose demo (rad). Urutan: base_yaw, shoulder, elbow, wrist_pitch, wrist_roll, gripper (0 = tertutup, maks ~1.57).
+# Nilai kecil & aman. Uji di fake mode dulu, lalu di robot asli dengan kecepatan rendah.
+demo_sequence:
+  ros__parameters:
+    driver_name: /ax12_driver
+    enable_torque: true
+    hold_s: 3.0
+    sequence: [home, lihat_kiri, lihat_kanan, home, membungkuk, buka, tutup]
+    poses:
+      home:        [0.0,  0.0,  0.0,  0.0, 0.0, 0.0]
+      lihat_kiri:  [0.6,  0.2,  0.4,  0.3, 0.0, 0.0]
+      lihat_kanan: [-0.6, 0.2,  0.4,  0.3, 0.0, 0.0]
+      membungkuk:  [0.0,  0.5,  0.6,  0.5, 0.0, 0.0]
+      buka:        [0.0,  0.5,  0.6,  0.5, 0.0, 1.2]
+      tutup:       [0.0,  0.5,  0.6,  0.5, 0.0, 0.0]

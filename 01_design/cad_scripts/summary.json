@@ -1,0 +1,102 @@
+{
+  "parts": [
+    {
+      "name": "base_legs_widowx_hybrid",
+      "stl_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\stl\\base_legs_widowx_hybrid.stl",
+      "step_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\step\\base_legs_widowx_hybrid.step",
+      "copied_to_ax_files": "F:\\Projects\\Robot Arm\\Robot Arm For AX-12A Dynamixel Actuators - 166430\\files\\base_legs_widowx_hybrid.stl",
+      "extents_mm": [
+        190.0,
+        190.0,
+        80.0
+      ],
+      "volume_cm3": 197.1,
+      "est_pla_mass_g_solid": 244.4,
+      "est_pla_mass_g_35pct": 127.1,
+      "watertight": true,
+      "triangles": 31526
+    },
+    {
+      "name": "base_turn_table_bot_widowx",
+      "stl_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\stl\\base_turn_table_bot_widowx.stl",
+      "step_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\step\\base_turn_table_bot_widowx.step",
+      "copied_to_ax_files": "F:\\Projects\\Robot Arm\\Robot Arm For AX-12A Dynamixel Actuators - 166430\\files\\base_turn_table_bot_widowx.stl",
+      "extents_mm": [
+        112.0,
+        112.0,
+        7.0
+      ],
+      "volume_cm3": 49.44,
+      "est_pla_mass_g_solid": 61.3,
+      "est_pla_mass_g_35pct": 31.9,
+      "watertight": true,
+      "triangles": 16424
+    },
+    {
+      "name": "base_widowx_outer_pillars",
+      "stl_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\stl\\base_widowx_outer_pillars.stl",
+      "step_path": "F:\\Projects\\Robot Arm\\widowx_ax12_hybrid_base\\step\\base_widowx_outer_pillars.step",
+      "copied_to_ax_files": "F:\\Projects\\Robot Arm\\Robot Arm For AX-12A Dynamixel Actuators - 166430\\files\\base_widowx_outer_pillars.stl",
+      "extents_mm": [
+        98.0,
+        46.0,
+        75.0
+      ],
+      "volume_cm3": 22.44,
+      "est_pla_mass_g_solid": 27.8,
+      "est_pla_mass_g_35pct": 14.5,
+      "watertight": true,
+      "triangles": 2144
+    }
+  ],
+  "interfaces_verified": {
+    "base_center_xy": [
+      31.0,
+      58.625
+    ],
+    "turntable_axis_xy": [
+      31.0,
+      65.0
+    ],
+    "top_leg_mount_holes_xy": [
+      [
+        6.0,
+        24.5
+      ],
+      [
+        56.0,
+        24.5
+      ],
+      [
+        6.0,
+        92.75
+      ],
+      [
+        56.0,
+        92.75
+      ]
+    ],
+    "top_leg_z_height_mm": 80.0,
+    "arbotix_pcb_holes_xy": [
+      [
+        4.75,
+        32.25
+      ],
+      [
+        57.25,
+        32.25
+      ],
+      [
+        4.75,
+        84.75
+      ],
+      [
+        57.25,
+        84.75
+      ]
+    ],
+    "arbotix_pcb_boss_z_mm": 9.0,
+    "turntable_groove_od_mm": 53.5,
+    "turntable_groove_id_mm": 35.5
+  }
+}

@@ -1,0 +1,40 @@
+﻿=== MODE: APPLY (file akan dipindah) ===
+  [lewati] tidak ada: ROS2\.venv-cad
+  [lewati] tidak ada: ROS2\compact_arm\ros2_ws\build
+  [lewati] tidak ada: ROS2\compact_arm\ros2_ws\install
+  [lewati] tidak ada: ROS2\compact_arm\ros2_ws\log
+  [lewati] tidak ada: ROS2\compact_arm\output\ros_logs
+  [lewati] tidak ada: ROS2\compact_arm\output\ros_logs_gui
+  [lewati] tidak ada: ROS2\compact_arm\__pycache__
+  [lewati] tidak ada: ROS2\mesh_analysis\__pycache__
+  [lewati] tidak ada: ROS2\mesh_analysis\separated_stl.zip
+  [lewati] tidak ada: widowx_ax12_hybrid_base\__pycache__
+  [lewati] tidak ada: MX-28_Arm-mk2.zip
+  [lewati] tidak ada: AX12A_WidowX_Full_STL
+  [lewati] tidak ada: AX12A_WidowX_Full_STEP
+  [lewati] tidak ada: widowx_ax12_hybrid_base
+  [lewati] tidak ada: 01_design\cad_scripts_requirements.txt
+  [lewati] tidak ada: Robot Arm For AX-12A Dynamixel Actuators - 166430
+  [lewati] tidak ada: widowx-mkii-robotic-arm
+  [lewati] tidak ada: MX-28_Arm-mk2 (1)
+  [lewati] tidak ada: ROS2\MX-28_Arm-mk2.stl
+  [lewati] tidak ada: pxpincher_ros-kinetic-devel\pxpincher_ros-kinetic-devel
+  [lewati] tidak ada: ROS2\reference_widowx
+  [lewati] tidak ada: ROS2\compact_arm
+  [lewati] tidak ada: ROS2\mesh_analysis
+  [lewati] tidak ada: ROS2\BUILD_CONSTRAINTS.md
+  [lewati] tidak ada: ARM.rar
+  [lewati] tidak ada: MX-28_Arm-mk2 (1).zip
+  [lewati] tidak ada: pxpincher_ros-kinetic-devel.zip
+  [lewati] tidak ada: Robot Arm For AX-12A Dynamixel Actuators - 166430.zip
+  [lewati] tidak ada: widowx-mkii-robotic-arm.zip
+  [pindah] 01_design\stl\09_wrist_rotate_x1.stl  ->  99_archive\old_gripper_ax12a\09_wrist_rotate_x1.stl
+  [pindah] 01_design\stl\10_the_crawer_base_x1.stl  ->  99_archive\old_gripper_ax12a\10_the_crawer_base_x1.stl
+  [pindah] 01_design\step\09_wrist_rotate.step  ->  99_archive\old_gripper_ax12a\09_wrist_rotate.step
+  [pindah] 01_design\step\10_the_crawer_base.step  ->  99_archive\old_gripper_ax12a\10_the_crawer_base.step
+  [patch lewati] 01_design\cad_scripts\build_full_robot_package.py sudah sesuai
+  [patch lewati] 01_design\cad_scripts\build_hybrid_base.py sudah sesuai
+  [patch lewati] 01_design\cad_scripts\render_preview.py sudah sesuai
+
+Selesai: 4 dipindah, 29 dilewati, 0 gagal.
+Cek isi _to_delete\ lalu hapus manual jika sudah yakin (+/- 0.5 GB).

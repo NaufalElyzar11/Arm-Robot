@@ -1,0 +1,1766 @@
+{
+  "urdf_parsed": true,
+  "links": 8,
+  "movable_joints": 6,
+  "fixed_joints": 1,
+  "positive_inertias": true,
+  "CAD_collision_samples": [
+    {
+      "pose": "zero",
+      "angles_rad": {},
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.001966967004000823,
+        "elbow_pitch": 0.001966967004000823,
+        "wrist_pitch": 0.0019669670040008227,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003928967004000823,
+        "elbow_pitch": 0.003928967004000823,
+        "wrist_pitch": 0.0039289670040008225,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      }
+    },
+    {
+      "pose": "gripper_closed",
+      "angles_rad": {
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0020540699419697816,
+        "elbow_pitch": 0.0020540699419697816,
+        "wrist_pitch": 0.002054069941969781,
+        "wrist_roll": 0.0,
+        "gripper": 8.71029379689587e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.004016069941969782,
+        "elbow_pitch": 0.004016069941969782,
+        "wrist_pitch": 0.004016069941969781,
+        "wrist_roll": 0.0,
+        "gripper": 8.71029379689587e-05
+      }
+    },
+    {
+      "pose": "working_pose",
+      "angles_rad": {
+        "shoulder_pitch": 0.3,
+        "elbow_pitch": -0.6,
+        "wrist_pitch": 0.3,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.013330542694969331,
+        "elbow_pitch": -0.023850714084767966,
+        "wrist_pitch": 0.002013329292780181,
+        "wrist_roll": 6.978655322339422e-20,
+        "gripper": 4.636228877935821e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.015292542694969331,
+        "elbow_pitch": -0.023773098682543996,
+        "wrist_pitch": 0.00397532929278018,
+        "wrist_roll": 6.978655322339422e-20,
+        "gripper": 4.636228877935821e-05
+      }
+    },
+    {
+      "pose": "base_yaw_min",
+      "angles_rad": {
+        "base_yaw": -1.57
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0019669670040008236,
+        "elbow_pitch": 0.0019669670040008236,
+        "wrist_pitch": 0.001966967004000823,
+        "wrist_roll": 0.0,
+        "gripper": 1.048865016717239e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003928967004000825,
+        "elbow_pitch": 0.003928967004000824,
+        "wrist_pitch": 0.003928967004000823,
+        "wrist_roll": 0.0,
+        "gripper": 1.048865016717239e-21
+      }
+    },
+    {
+      "pose": "base_yaw_max",
+      "angles_rad": {
+        "base_yaw": 1.57
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.001966967004000823,
+        "elbow_pitch": 0.001966967004000823,
+        "wrist_pitch": 0.0019669670040008227,
+        "wrist_roll": 0.0,
+        "gripper": 1.048865016717239e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003928967004000824,
+        "elbow_pitch": 0.003928967004000823,
+        "wrist_pitch": 0.003928967004000823,
+        "wrist_roll": 0.0,
+        "gripper": 1.048865016717239e-21
+      }
+    },
+    {
+      "pose": "shoulder_pitch_min",
+      "angles_rad": {
+        "shoulder_pitch": -0.65
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.16007379502125843,
+        "elbow_pitch": -0.08393148514170301,
+        "wrist_pitch": -0.030965335630996557,
+        "wrist_roll": -0.002015053173669686,
+        "gripper": -8.182562354739262e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.17353218156838968,
+        "elbow_pitch": -0.0935309005726584,
+        "wrist_pitch": -0.03670577994577608,
+        "wrist_roll": -0.002015053173669686,
+        "gripper": -8.182562354739262e-05
+      }
+    },
+    {
+      "pose": "shoulder_pitch_max",
+      "angles_rad": {
+        "shoulder_pitch": 0.65
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.1632055361495897,
+        "elbow_pitch": 0.08706322627003428,
+        "wrist_pitch": 0.03409707675932782,
+        "wrist_roll": 0.002015053173669686,
+        "gripper": 8.182562354739262e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.17978775552222742,
+        "elbow_pitch": 0.09978647452649617,
+        "wrist_pitch": 0.04296135389961384,
+        "wrist_roll": 0.002015053173669686,
+        "gripper": 8.182562354739262e-05
+      }
+    },
+    {
+      "pose": "elbow_pitch_min",
+      "angles_rad": {
+        "elbow_pitch": -0.85
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.10483853500063439,
+        "elbow_pitch": -0.10483853500063439,
+        "wrist_pitch": -0.03908618186453159,
+        "wrist_roll": -0.0025014936726025696,
+        "gripper": -0.00010157859962960746
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.11739936232432945,
+        "elbow_pitch": -0.11739936232432945,
+        "wrist_pitch": -0.04685646968484957,
+        "wrist_roll": -0.0025014936726025696,
+        "gripper": -0.00010157859962960746
+      }
+    },
+    {
+      "pose": "elbow_pitch_max",
+      "angles_rad": {
+        "elbow_pitch": 0.85
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.10743486514293923,
+        "elbow_pitch": 0.10743486514293923,
+        "wrist_pitch": 0.04168251200683644,
+        "wrist_roll": 0.0025014936726025696,
+        "gripper": 0.00010157859962960746
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.12258546633108697,
+        "elbow_pitch": 0.12258546633108697,
+        "wrist_pitch": 0.052042573691607086,
+        "wrist_roll": 0.0025014936726025696,
+        "gripper": 0.00010157859962960746
+      }
+    },
+    {
+      "pose": "wrist_pitch_min",
+      "angles_rad": {
+        "wrist_pitch": -0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.03312487539636825,
+        "elbow_pitch": -0.03312487539636825,
+        "wrist_pitch": -0.03312487539636825,
+        "wrist_roll": -0.0021450133097812066,
+        "gripper": -8.710293796895875e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.03939757890443223,
+        "elbow_pitch": -0.03939757890443223,
+        "wrist_pitch": -0.03939757890443223,
+        "wrist_roll": -0.0021450133097812066,
+        "gripper": -8.710293796895875e-05
+      }
+    },
+    {
+      "pose": "wrist_pitch_max",
+      "angles_rad": {
+        "wrist_pitch": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.03613371408768106,
+        "elbow_pitch": 0.03613371408768106,
+        "wrist_pitch": 0.03613371408768106,
+        "wrist_roll": 0.0021450133097812066,
+        "gripper": 8.710293796895875e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.045407658338649376,
+        "elbow_pitch": 0.045407658338649376,
+        "wrist_pitch": 0.045407658338649376,
+        "wrist_roll": 0.0021450133097812066,
+        "gripper": 8.710293796895875e-05
+      }
+    },
+    {
+      "pose": "wrist_roll_min",
+      "angles_rad": {
+        "wrist_roll": -1.0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0017390390726094657,
+        "elbow_pitch": -0.001739039072609466,
+        "wrist_pitch": -0.001739039072609466,
+        "wrist_roll": 0.0,
+        "gripper": 1.6940658945086007e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0006789659484961754,
+        "elbow_pitch": -0.0006789659484961756,
+        "wrist_pitch": -0.0006789659484961756,
+        "wrist_roll": 0.0,
+        "gripper": 1.6940658945086007e-21
+      }
+    },
+    {
+      "pose": "wrist_roll_max",
+      "angles_rad": {
+        "wrist_roll": 1.0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0038645526882658487,
+        "elbow_pitch": 0.0038645526882658487,
+        "wrist_pitch": 0.0038645526882658482,
+        "wrist_roll": 0.0,
+        "gripper": -1.6940658945086007e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.004924625812379139,
+        "elbow_pitch": 0.004924625812379139,
+        "wrist_pitch": 0.004924625812379138,
+        "wrist_roll": 0.0,
+        "gripper": -1.6940658945086007e-21
+      }
+    },
+    {
+      "pose": "gripper_min",
+      "angles_rad": {
+        "gripper": 0.0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.001966967004000823,
+        "elbow_pitch": 0.001966967004000823,
+        "wrist_pitch": 0.0019669670040008227,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003928967004000823,
+        "elbow_pitch": 0.003928967004000823,
+        "wrist_pitch": 0.0039289670040008225,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      }
+    },
+    {
+      "pose": "gripper_max",
+      "angles_rad": {
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0020540699419697816,
+        "elbow_pitch": 0.0020540699419697816,
+        "wrist_pitch": 0.002054069941969781,
+        "wrist_roll": 0.0,
+        "gripper": 8.71029379689587e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.004016069941969782,
+        "elbow_pitch": 0.004016069941969782,
+        "wrist_pitch": 0.004016069941969781,
+        "wrist_roll": 0.0,
+        "gripper": 8.71029379689587e-05
+      }
+    },
+    {
+      "pose": "combined_00",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.20587996972471934,
+        "elbow_pitch": -0.12973765984516394,
+        "wrist_pitch": -0.042436510817545924,
+        "wrist_roll": -0.0027926744086437115,
+        "gripper": -5.906294161371509e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.2264788819982973,
+        "elbow_pitch": -0.14647760100256607,
+        "wrist_pitch": -0.05281592519286728,
+        "wrist_roll": -0.004127474540839981,
+        "gripper": -5.906294161371509e-05
+      }
+    },
+    {
+      "pose": "combined_01",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.2169122370236255,
+        "elbow_pitch": -0.14076992714407008,
+        "wrist_pitch": -0.053468778116452044,
+        "wrist_roll": -0.0033212997176159187,
+        "gripper": -0.00012341235337656978
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.23902902228907058,
+        "elbow_pitch": -0.1590277412933393,
+        "wrist_pitch": -0.06536606548364052,
+        "wrist_roll": -0.0033212997176159187,
+        "gripper": -0.00012341235337656978
+      }
+    },
+    {
+      "pose": "combined_02",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.1992561808337263,
+        "elbow_pitch": -0.12311387095417088,
+        "wrist_pitch": -0.03581272192655284,
+        "wrist_roll": -5.062538980705734e-05,
+        "gripper": 2.0603734562860048e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.21739295247363546,
+        "elbow_pitch": -0.1373916714779042,
+        "wrist_pitch": -0.04372999566820541,
+        "wrist_roll": 0.001133705177949119,
+        "gripper": 2.0603734562860048e-05
+      }
+    },
+    {
+      "pose": "combined_03",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.1819383799768958,
+        "elbow_pitch": -0.10579607009734042,
+        "wrist_pitch": -0.05282992058663394,
+        "wrist_roll": -0.0033703027477243507,
+        "gripper": -7.127934205049797e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.2011975298588029,
+        "elbow_pitch": -0.12119624886307168,
+        "wrist_pitch": -0.06437112823618933,
+        "wrist_roll": -0.004981188907342486,
+        "gripper": -7.127934205049797e-05
+      }
+    },
+    {
+      "pose": "combined_04",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.16003192588872228,
+        "elbow_pitch": -0.08388961600916686,
+        "wrist_pitch": -0.03092346649846041,
+        "wrist_roll": -0.002015053173669686,
+        "gripper": -3.995649101124302e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.17349031243585353,
+        "elbow_pitch": -0.09348903144012224,
+        "wrist_pitch": -0.036663910813239935,
+        "wrist_roll": -0.002015053173669686,
+        "gripper": -3.995649101124302e-05
+      }
+    },
+    {
+      "pose": "combined_05",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.12251674077586451,
+        "elbow_pitch": -0.04637443089630912,
+        "wrist_pitch": 0.006591718614397353,
+        "wrist_roll": 3.527139392359872e-06,
+        "gripper": 8.978661198532327e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.12857287104929957,
+        "elbow_pitch": -0.048571590053568335,
+        "wrist_pitch": 0.008253530573313994,
+        "wrist_roll": -7.898677338992577e-05,
+        "gripper": 8.978661198532327e-05
+      }
+    },
+    {
+      "pose": "combined_06",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0860518963646131,
+        "elbow_pitch": -0.009909586485057716,
+        "wrist_pitch": -0.027297203553695002,
+        "wrist_roll": -0.0016560116114121223,
+        "gripper": -3.5023387192483486e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.09349864318138368,
+        "elbow_pitch": -0.013497362185652433,
+        "wrist_pitch": -0.032151794242104424,
+        "wrist_roll": -0.0024475269097905617,
+        "gripper": -3.5023387192483486e-05
+      }
+    },
+    {
+      "pose": "combined_07",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.04610384809711161,
+        "elbow_pitch": 0.030038461782443786,
+        "wrist_pitch": 0.01265084471380651,
+        "wrist_roll": 0.0006614974522478448,
+        "gripper": 7.06711321043196e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0443759098535758,
+        "elbow_pitch": 0.03562537114215546,
+        "wrist_pitch": 0.016970939085703473,
+        "wrist_roll": 0.0006614974522478448,
+        "gripper": 7.06711321043196e-05
+      }
+    },
+    {
+      "pose": "combined_08",
+      "angles_rad": {
+        "shoulder_pitch": -0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.014241124508528153,
+        "elbow_pitch": 0.06190118537102725,
+        "wrist_pitch": 0.044513568302389964,
+        "wrist_roll": 5.528109491134637e-05,
+        "gripper": 9.791156670999586e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.006722471126206551,
+        "elbow_pitch": 0.0732788098695247,
+        "wrist_pitch": 0.054624377813072715,
+        "wrist_roll": -0.001237965056319494,
+        "gripper": 9.791156670999586e-05
+      }
+    },
+    {
+      "pose": "combined_09",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.11953091928012448,
+        "elbow_pitch": -0.11953091928012448,
+        "wrist_pitch": -0.05377856614402167,
+        "wrist_roll": -0.003453411195446857,
+        "gripper": -7.30370225664391e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.13636310557926498,
+        "elbow_pitch": -0.13636310557926498,
+        "wrist_pitch": -0.06582021293978509,
+        "wrist_roll": -0.005104020269652986,
+        "gripper": -7.30370225664391e-05
+      }
+    },
+    {
+      "pose": "combined_10",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.10480177823650706,
+        "elbow_pitch": -0.10480177823650706,
+        "wrist_pitch": -0.03904942510040425,
+        "wrist_roll": -0.0025014936726025696,
+        "gripper": -6.482183550227324e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.11736260556020212,
+        "elbow_pitch": -0.11736260556020212,
+        "wrist_pitch": -0.046819712920722234,
+        "wrist_roll": -0.0025014936726025696,
+        "gripper": -6.482183550227324e-05
+      }
+    },
+    {
+      "pose": "combined_11",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.06991281171034677,
+        "elbow_pitch": -0.06991281171034677,
+        "wrist_pitch": -0.00416045857424394,
+        "wrist_roll": -1.0546176166188408e-05,
+        "gripper": 7.77751778807347e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.07545834690596952,
+        "elbow_pitch": -0.07545834690596952,
+        "wrist_pitch": -0.004915454266489604,
+        "wrist_roll": 0.00023617111043962072,
+        "gripper": 7.77751778807347e-05
+      }
+    },
+    {
+      "pose": "combined_12",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.035959385190092466,
+        "elbow_pitch": -0.035959385190092466,
+        "wrist_pitch": -0.035959385190092466,
+        "wrist_roll": -0.0022252297477699,
+        "gripper": -4.706191823251796e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.04292192042268031,
+        "elbow_pitch": -0.04292192042268031,
+        "wrist_pitch": -0.04292192042268031,
+        "wrist_roll": -0.0032888112925060294,
+        "gripper": -4.706191823251796e-05
+      }
+    },
+    {
+      "pose": "combined_13",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0020133292927801815,
+        "elbow_pitch": 0.0020133292927801815,
+        "wrist_pitch": 0.002013329292780181,
+        "wrist_roll": 0.0,
+        "gripper": 4.636228877935824e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003975329292780182,
+        "elbow_pitch": 0.003975329292780182,
+        "wrist_pitch": 0.003975329292780182,
+        "wrist_roll": 0.0,
+        "gripper": 4.636228877935824e-05
+      }
+    },
+    {
+      "pose": "combined_14",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.03760057967709895,
+        "elbow_pitch": 0.03760057967709895,
+        "wrist_pitch": 0.03760057967709895,
+        "wrist_roll": 4.5463852542345166e-05,
+        "gripper": 0.00010261494207384621
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.04618469220354341,
+        "elbow_pitch": 0.04618469220354341,
+        "wrist_pitch": 0.04618469220354341,
+        "wrist_roll": -0.001018117692193784,
+        "gripper": 0.00010261494207384621
+      }
+    },
+    {
+      "pose": "combined_15",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.07206574295643035,
+        "elbow_pitch": 0.07206574295643035,
+        "wrist_pitch": 0.006313389820327528,
+        "wrist_roll": 0.0005161829369468087,
+        "gripper": 1.0916876873481227e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.07970761744329415,
+        "elbow_pitch": 0.07970761744329415,
+        "wrist_pitch": 0.009164724803814243,
+        "wrist_roll": 0.0007629002235526178,
+        "gripper": 1.0916876873481227e-05
+      }
+    },
+    {
+      "pose": "combined_16",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.10745930503720996,
+        "elbow_pitch": 0.10745930503720996,
+        "wrist_pitch": 0.04170695190110716,
+        "wrist_roll": 0.0025014936726025696,
+        "gripper": 0.00012601849390033086
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.1226099062253577,
+        "elbow_pitch": 0.1226099062253577,
+        "wrist_pitch": 0.052067013585877814,
+        "wrist_roll": 0.0025014936726025696,
+        "gripper": 0.00012601849390033086
+      }
+    },
+    {
+      "pose": "combined_17",
+      "angles_rad": {
+        "shoulder_pitch": 0,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.11954430943512814,
+        "elbow_pitch": 0.11954430943512814,
+        "wrist_pitch": 0.05379195629902533,
+        "wrist_roll": 7.055692901608424e-05,
+        "gripper": 5.7673086688669814e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.13642058381041788,
+        "elbow_pitch": 0.13642058381041788,
+        "wrist_pitch": 0.06587769117093799,
+        "wrist_roll": -0.0015800521451900442,
+        "gripper": 5.7673086688669814e-05
+      }
+    },
+    {
+      "pose": "combined_18",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.015566713195555209,
+        "elbow_pitch": -0.06057559668400019,
+        "wrist_pitch": -0.043187979615362915,
+        "wrist_roll": -0.0027057349962026286,
+        "gripper": -5.722423910509291e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0093659638553229,
+        "elbow_pitch": -0.07063531714040835,
+        "wrist_pitch": -0.051980885083956374,
+        "wrist_roll": -0.0039989811474334695,
+        "gripper": -5.722423910509291e-05
+      }
+    },
+    {
+      "pose": "combined_19",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.050050241597196815,
+        "elbow_pitch": -0.02609206828235859,
+        "wrist_pitch": -0.008704451213721308,
+        "wrist_roll": -0.0006614974522478448,
+        "gripper": 2.0205127305426472e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.052168084605110035,
+        "elbow_pitch": -0.027833196390621227,
+        "wrist_pitch": -0.009178764334169238,
+        "wrist_roll": -0.0006614974522478448,
+        "gripper": 2.0205127305426472e-05
+      }
+    },
+    {
+      "pose": "combined_20",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": -0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.08794326740649078,
+        "elbow_pitch": 0.01180095752693536,
+        "wrist_pitch": 0.029188574595572645,
+        "wrist_roll": 3.383410984196377e-05,
+        "gripper": 0.00010322738351738755
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0972506175993623,
+        "elbow_pitch": 0.017249336603631024,
+        "wrist_pitch": 0.03590376866008301,
+        "wrist_roll": -0.0007576811885364756,
+        "gripper": 0.00010322738351738755
+      }
+    },
+    {
+      "pose": "combined_21",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.12468501206566085,
+        "elbow_pitch": 0.048542702186105464,
+        "wrist_pitch": -0.004423447324601016,
+        "wrist_roll": -0.00017263595277368843,
+        "gripper": -3.6511192165980102e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.13285863895658762,
+        "elbow_pitch": 0.05285735796085639,
+        "wrist_pitch": -0.003967762666025949,
+        "wrist_roll": -0.0002551498655559741,
+        "gripper": -3.6511192165980102e-06
+      }
+    },
+    {
+      "pose": "combined_22",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.16323748355097534,
+        "elbow_pitch": 0.08709517367141993,
+        "wrist_pitch": 0.03412902416071347,
+        "wrist_roll": 0.002015053173669686,
+        "gripper": 0.00011377302493304244
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.17981970292361307,
+        "elbow_pitch": 0.09981842192788182,
+        "wrist_pitch": 0.042993301300999494,
+        "wrist_roll": 0.002015053173669686,
+        "gripper": 0.00011377302493304244
+      }
+    },
+    {
+      "pose": "combined_23",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.18238316536984725,
+        "elbow_pitch": 0.10624085549029184,
+        "wrist_pitch": 0.05327470597958538,
+        "wrist_roll": 6.885893346480872e-05,
+        "gripper": 7.359357376275432e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.20210664145773122,
+        "elbow_pitch": 0.12210536046199993,
+        "wrist_pitch": 0.06528023983511762,
+        "wrist_roll": -0.0015420272261533266,
+        "gripper": 7.359357376275432e-05
+      }
+    },
+    {
+      "pose": "combined_24",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": -0.7,
+        "wrist_roll": -1,
+        "gripper": 0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.20079263716064297,
+        "elbow_pitch": 0.12465032728108758,
+        "wrist_pitch": 0.037349178253469534,
+        "wrist_roll": 0.002477861357793768,
+        "gripper": 5.2404884811949994e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.22040652891648882,
+        "elbow_pitch": 0.1404052479207576,
+        "wrist_pitch": 0.046743572111058784,
+        "wrist_roll": 0.003662191925549945,
+        "gripper": 5.2404884811949994e-05
+      }
+    },
+    {
+      "pose": "combined_25",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0,
+        "wrist_roll": 0,
+        "gripper": 0.35
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.21719707158403925,
+        "elbow_pitch": 0.14105476170448383,
+        "wrist_pitch": 0.05375361267686581,
+        "wrist_roll": 0.0033212997176159187,
+        "gripper": 0.00012997143051889331
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.2395914296288284,
+        "elbow_pitch": 0.15959014863309712,
+        "wrist_pitch": 0.06592847282339835,
+        "wrist_roll": 0.0033212997176159187,
+        "gripper": 0.00012997143051889331
+      }
+    },
+    {
+      "pose": "combined_26",
+      "angles_rad": {
+        "shoulder_pitch": 0.65,
+        "elbow_pitch": 0.85,
+        "wrist_pitch": 0.7,
+        "wrist_roll": 1,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.20457570040860926,
+        "elbow_pitch": 0.12843339052905384,
+        "wrist_pitch": 0.04113224150143582,
+        "wrist_roll": 5.705736121881451e-05,
+        "gripper": -6.0863468596653955e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.22392690424636116,
+        "elbow_pitch": 0.14392562325062988,
+        "wrist_pitch": 0.05026394744093111,
+        "wrist_roll": -0.0012777427709774554,
+        "gripper": -6.0863468596653955e-06
+      }
+    },
+    {
+      "pose": "demo_00",
+      "angles_rad": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0,
+        "elbow_pitch": -0.0,
+        "wrist_pitch": 0.0,
+        "wrist_roll": 0.0,
+        "gripper": 0.0
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.001966967004000823,
+        "elbow_pitch": 0.001966967004000823,
+        "wrist_pitch": 0.0019669670040008227,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.003928967004000823,
+        "elbow_pitch": 0.003928967004000823,
+        "wrist_pitch": 0.0039289670040008225,
+        "wrist_roll": 0.0,
+        "gripper": 1.0496679346871458e-21
+      }
+    },
+    {
+      "pose": "demo_01",
+      "angles_rad": {
+        "base_yaw": 0.12940952255126037,
+        "shoulder_pitch": 0.07764571353075622,
+        "elbow_pitch": -0.15529142706151244,
+        "wrist_pitch": 0.07764571353075622,
+        "wrist_roll": 0.15529142706151244,
+        "gripper": 0.01192596079882609
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.00543040532580309,
+        "elbow_pitch": -0.004328877362649835,
+        "wrist_pitch": 0.0024598794640279505,
+        "wrist_roll": 3.091358052940608e-21,
+        "gripper": 1.6124388079667923e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.007368795595429249,
+        "elbow_pitch": -0.0028850976461958604,
+        "wrist_pitch": 0.004398269733654111,
+        "wrist_roll": 4.314648521626297e-21,
+        "gripper": 1.6124388079667923e-06
+      }
+    },
+    {
+      "pose": "demo_02",
+      "angles_rad": {
+        "base_yaw": 0.24999999999999997,
+        "shoulder_pitch": 0.14999999999999997,
+        "elbow_pitch": -0.29999999999999993,
+        "wrist_pitch": 0.14999999999999997,
+        "wrist_roll": 0.29999999999999993,
+        "gripper": 0.04689110867544645
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.00859201438120158,
+        "elbow_pitch": -0.010209737414244004,
+        "wrist_pitch": 0.002869146037493226,
+        "wrist_roll": -2.5664085429515606e-19,
+        "gripper": 6.337697353888143e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.010466384572866017,
+        "elbow_pitch": -0.009288259474297471,
+        "wrist_pitch": 0.004743516229157664,
+        "wrist_roll": -1.8714343118648606e-19,
+        "gripper": 6.337697353888143e-06
+      }
+    },
+    {
+      "pose": "demo_03",
+      "angles_rad": {
+        "base_yaw": 0.3535533905932738,
+        "shoulder_pitch": 0.21213203435596426,
+        "elbow_pitch": -0.4242640687119285,
+        "wrist_pitch": 0.21213203435596426,
+        "wrist_roll": 0.4242640687119285,
+        "gripper": 0.10251262658470835
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.011238832720885335,
+        "elbow_pitch": -0.015251110785874458,
+        "wrist_pitch": 0.003175836210199519,
+        "wrist_roll": -1.0744618331743963e-19,
+        "gripper": 1.3836192608068567e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.013026885579665378,
+        "elbow_pitch": -0.014805595696481991,
+        "wrist_pitch": 0.004963889068979564,
+        "wrist_roll": -8.08021687877375e-20,
+        "gripper": 1.3836192608068567e-05
+      }
+    },
+    {
+      "pose": "demo_04",
+      "angles_rad": {
+        "base_yaw": 0.4330127018922193,
+        "shoulder_pitch": 0.25980762113533157,
+        "elbow_pitch": -0.5196152422706631,
+        "wrist_pitch": 0.25980762113533157,
+        "wrist_roll": 0.5196152422706631,
+        "gripper": 0.17499999999999996
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.013219113709694006,
+        "elbow_pitch": -0.019102416735912606,
+        "wrist_pitch": 0.0033811015170123336,
+        "wrist_roll": 1.7220624927336446e-19,
+        "gripper": 2.3540692236707397e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.01492214990634777,
+        "elbow_pitch": -0.01903746917378403,
+        "wrist_pitch": 0.005084137713666096,
+        "wrist_roll": 1.7831372464572845e-19,
+        "gripper": 2.3540692236707397e-05
+      }
+    },
+    {
+      "pose": "demo_05",
+      "angles_rad": {
+        "base_yaw": 0.4829629131445341,
+        "shoulder_pitch": 0.28977774788672045,
+        "elbow_pitch": -0.5795554957734409,
+        "wrist_pitch": 0.28977774788672045,
+        "wrist_roll": 0.5795554957734409,
+        "gripper": 0.25941333421411766
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.014440919698207355,
+        "elbow_pitch": -0.02150973291339121,
+        "wrist_pitch": 0.003498277012305541,
+        "wrist_roll": 1.519553028440198e-19,
+        "gripper": 3.468250736601239e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.01608253719634572,
+        "elbow_pitch": -0.021690131719398112,
+        "wrist_pitch": 0.005139894510443905,
+        "wrist_roll": 9.420176320682257e-20,
+        "gripper": 3.468250736601239e-05
+      }
+    },
+    {
+      "pose": "demo_06",
+      "angles_rad": {
+        "base_yaw": 0.5,
+        "shoulder_pitch": 0.3,
+        "elbow_pitch": -0.6,
+        "wrist_pitch": 0.3,
+        "wrist_roll": 0.6,
+        "gripper": 0.3499999999999999
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.014858942226104952,
+        "elbow_pitch": -0.022322314553632344,
+        "wrist_pitch": 0.003541728823915797,
+        "wrist_roll": 6.683901829273448e-20,
+        "gripper": 4.6362288779358195e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.016478250702557744,
+        "elbow_pitch": -0.022587390674955583,
+        "wrist_pitch": 0.005161037300368586,
+        "wrist_roll": -5.073317628792864e-20,
+        "gripper": 4.6362288779358195e-05
+      }
+    },
+    {
+      "pose": "demo_07",
+      "angles_rad": {
+        "base_yaw": 0.48296291314453416,
+        "shoulder_pitch": 0.2897777478867205,
+        "elbow_pitch": -0.579555495773441,
+        "wrist_pitch": 0.2897777478867205,
+        "wrist_roll": 0.579555495773441,
+        "gripper": 0.44058666578588224
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.014460146684279019,
+        "elbow_pitch": -0.021490505927319555,
+        "wrist_pitch": 0.0035175039983772016,
+        "wrist_roll": -4.759463016145227e-20,
+        "gripper": 5.7661883935391614e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.016101764182417384,
+        "elbow_pitch": -0.021670904733326456,
+        "wrist_pitch": 0.005159121496515565,
+        "wrist_roll": -1.1143286998393226e-19,
+        "gripper": 5.7661883935391614e-05
+      }
+    },
+    {
+      "pose": "demo_08",
+      "angles_rad": {
+        "base_yaw": 0.43301270189221935,
+        "shoulder_pitch": 0.2598076211353316,
+        "elbow_pitch": -0.5196152422706632,
+        "wrist_pitch": 0.2598076211353316,
+        "wrist_roll": 0.5196152422706632,
+        "gripper": 0.5249999999999999
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.013257503173062716,
+        "elbow_pitch": -0.019064027272543905,
+        "wrist_pitch": 0.0034194909803810384,
+        "wrist_roll": 1.8036385568929997e-20,
+        "gripper": 6.776766009410952e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.014960539369716482,
+        "elbow_pitch": -0.01899907971041533,
+        "wrist_pitch": 0.005122527177034801,
+        "wrist_roll": -2.4056371481925164e-20,
+        "gripper": 6.776766009410952e-05
+      }
+    },
+    {
+      "pose": "demo_09",
+      "angles_rad": {
+        "base_yaw": 0.3535533905932738,
+        "shoulder_pitch": 0.21213203435596426,
+        "elbow_pitch": -0.4242640687119285,
+        "wrist_pitch": 0.21213203435596426,
+        "wrist_roll": 0.4242640687119285,
+        "gripper": 0.5974873734152916
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.011295542764699584,
+        "elbow_pitch": -0.01519440074206021,
+        "wrist_pitch": 0.0032325462540137677,
+        "wrist_roll": -1.0660113937819178e-19,
+        "gripper": 7.606315945482563e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.01308359562347963,
+        "elbow_pitch": -0.014748885652667744,
+        "wrist_pitch": 0.005020599112793813,
+        "wrist_roll": -7.995712484848966e-20,
+        "gripper": 7.606315945482563e-05
+      }
+    },
+    {
+      "pose": "demo_10",
+      "angles_rad": {
+        "base_yaw": 0.25000000000000017,
+        "shoulder_pitch": 0.1500000000000001,
+        "elbow_pitch": -0.3000000000000002,
+        "wrist_pitch": 0.1500000000000001,
+        "wrist_roll": 0.3000000000000002,
+        "gripper": 0.6531088913245534
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.008664450057262818,
+        "elbow_pitch": -0.01013730173818278,
+        "wrist_pitch": 0.002941581713554447,
+        "wrist_roll": 5.329365332983587e-21,
+        "gripper": 8.215985727945865e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.010538820248927256,
+        "elbow_pitch": -0.009215823798236248,
+        "wrist_pitch": 0.004815951905218885,
+        "wrist_roll": -1.7604470037552313e-20,
+        "gripper": 8.215985727945865e-05
+      }
+    },
+    {
+      "pose": "demo_11",
+      "angles_rad": {
+        "base_yaw": 0.1294095225512605,
+        "shoulder_pitch": 0.0776457135307563,
+        "elbow_pitch": -0.1552914270615126,
+        "wrist_pitch": 0.0776457135307563,
+        "wrist_roll": 0.1552914270615126,
+        "gripper": 0.6880740392011738
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.00551364253447105,
+        "elbow_pitch": -0.004245640153981885,
+        "wrist_pitch": 0.002543116672695906,
+        "wrist_roll": 7.144711085459147e-20,
+        "gripper": 8.586348255573646e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.00745203280409721,
+        "elbow_pitch": -0.002801860437527911,
+        "wrist_pitch": 0.004481506942322067,
+        "wrist_roll": 5.415429398027379e-20,
+        "gripper": 8.586348255573646e-05
+      }
+    },
+    {
+      "pose": "demo_12",
+      "angles_rad": {
+        "base_yaw": 6.123233995736766e-17,
+        "shoulder_pitch": 3.6739403974420595e-17,
+        "elbow_pitch": -7.347880794884119e-17,
+        "wrist_pitch": 3.6739403974420595e-17,
+        "wrist_roll": 7.347880794884119e-17,
+        "gripper": 0.7
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0020540699419697834,
+        "elbow_pitch": 0.002054069941969778,
+        "wrist_pitch": 0.0020540699419697816,
+        "wrist_roll": 0.0,
+        "gripper": 8.710293796895868e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.004016069941969783,
+        "elbow_pitch": 0.004016069941969779,
+        "wrist_pitch": 0.004016069941969781,
+        "wrist_roll": 0.0,
+        "gripper": 8.710293796895868e-05
+      }
+    },
+    {
+      "pose": "demo_13",
+      "angles_rad": {
+        "base_yaw": -0.12940952255126018,
+        "shoulder_pitch": -0.0776457135307561,
+        "elbow_pitch": 0.1552914270615122,
+        "wrist_pitch": -0.0776457135307561,
+        "wrist_roll": -0.1552914270615122,
+        "gripper": 0.6880740392011739
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0014573870397379405,
+        "elbow_pitch": 0.008301895648714969,
+        "wrist_pitch": 0.0015131388220371955,
+        "wrist_roll": -1.0519145732294271e-21,
+        "gripper": 8.586348255573642e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.00048100322988821873,
+        "elbow_pitch": 0.010734896471513312,
+        "wrist_pitch": 0.0034515290916633553,
+        "wrist_roll": -3.0550804844408975e-21,
+        "gripper": 8.586348255573642e-05
+      }
+    },
+    {
+      "pose": "demo_14",
+      "angles_rad": {
+        "base_yaw": -0.24999999999999986,
+        "shoulder_pitch": -0.1499999999999999,
+        "elbow_pitch": 0.2999999999999998,
+        "wrist_pitch": -0.1499999999999999,
+        "wrist_roll": -0.2999999999999998,
+        "gripper": 0.6531088913245535
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.004749238734405841,
+        "elbow_pitch": 0.014052513061039738,
+        "wrist_pitch": 0.0009736296093025115,
+        "wrist_roll": 1.8330996480833254e-19,
+        "gripper": 8.215985727945886e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0028748685427413996,
+        "elbow_pitch": 0.016879775504422087,
+        "wrist_pitch": 0.0028479998009669537,
+        "wrist_roll": 1.9580865283172146e-19,
+        "gripper": 8.215985727945886e-05
+      }
+    },
+    {
+      "pose": "demo_15",
+      "angles_rad": {
+        "base_yaw": -0.35355339059327356,
+        "shoulder_pitch": -0.21213203435596414,
+        "elbow_pitch": 0.4242640687119283,
+        "wrist_pitch": -0.21213203435596414,
+        "wrist_roll": -0.4242640687119283,
+        "gripper": 0.5974873734152917
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.007571744676686594,
+        "elbow_pitch": 0.018918198830073188,
+        "wrist_pitch": 0.0004912518339992178,
+        "wrist_roll": 1.8278930170177598e-19,
+        "gripper": 7.606315945482564e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.005783691817906546,
+        "elbow_pitch": 0.022048789458240813,
+        "wrist_pitch": 0.0022793046927792643,
+        "wrist_roll": 1.904302348449021e-19,
+        "gripper": 7.606315945482564e-05
+      }
+    },
+    {
+      "pose": "demo_16",
+      "angles_rad": {
+        "base_yaw": -0.43301270189221924,
+        "shoulder_pitch": -0.2598076211353315,
+        "elbow_pitch": 0.519615242270663,
+        "wrist_pitch": -0.2598076211353315,
+        "wrist_roll": -0.519615242270663,
+        "gripper": 0.5250000000000001
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.009725161905438035,
+        "elbow_pitch": 0.022596368540168568,
+        "wrist_pitch": 0.0001128502872436354,
+        "wrist_roll": 7.721647361760467e-20,
+        "gripper": 6.776766009410952e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.008022125708784272,
+        "elbow_pitch": 0.025937493371347518,
+        "wrist_pitch": 0.001815886483897397,
+        "wrist_roll": 1.4013889108052342e-19,
+        "gripper": 6.776766009410952e-05
+      }
+    },
+    {
+      "pose": "demo_17",
+      "angles_rad": {
+        "base_yaw": -0.48296291314453405,
+        "shoulder_pitch": -0.2897777478867204,
+        "elbow_pitch": 0.5795554957734408,
+        "wrist_pitch": -0.2897777478867204,
+        "wrist_roll": -0.5795554957734408,
+        "gripper": 0.4405866657858825
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.01107210773456188,
+        "elbow_pitch": 0.02487854487703669,
+        "wrist_pitch": -0.00012946504866006756,
+        "wrist_roll": 1.4350399212262882e-19,
+        "gripper": 5.766188393539167e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.009430490236423512,
+        "elbow_pitch": 0.02834217867932032,
+        "wrist_pitch": 0.0015121524494782976,
+        "wrist_roll": 1.586459196392609e-19,
+        "gripper": 5.766188393539167e-05
+      }
+    },
+    {
+      "pose": "demo_18",
+      "angles_rad": {
+        "base_yaw": -0.5,
+        "shoulder_pitch": -0.3,
+        "elbow_pitch": 0.6,
+        "wrist_pitch": -0.3,
+        "wrist_roll": -0.6,
+        "gripper": 0.35000000000000003
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.011535597486360159,
+        "elbow_pitch": 0.025645659293377136,
+        "wrist_pitch": -0.00021838408417100249,
+        "wrist_roll": -3.0813518889997233e-19,
+        "gripper": 4.63622887793582e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.009916289009907368,
+        "elbow_pitch": 0.029149352367605956,
+        "wrist_pitch": 0.001400924392281784,
+        "wrist_roll": -4.257073834806355e-19,
+        "gripper": 4.63622887793582e-05
+      }
+    },
+    {
+      "pose": "demo_19",
+      "angles_rad": {
+        "base_yaw": -0.4829629131445342,
+        "shoulder_pitch": -0.2897777478867205,
+        "elbow_pitch": 0.579555495773441,
+        "wrist_pitch": -0.2897777478867205,
+        "wrist_roll": -0.579555495773441,
+        "gripper": 0.2594133342141179
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.011091334720633558,
+        "elbow_pitch": 0.024859317890965023,
+        "wrist_pitch": -0.00014869203473173481,
+        "wrist_roll": -8.340971542813946e-20,
+        "gripper": 3.468250736601241e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.009449717222495194,
+        "elbow_pitch": 0.028322951693248652,
+        "wrist_pitch": 0.0014929254634066282,
+        "wrist_roll": -1.4724795525061947e-19,
+        "gripper": 3.468250736601241e-05
+      }
+    },
+    {
+      "pose": "demo_20",
+      "angles_rad": {
+        "base_yaw": -0.4330127018922195,
+        "shoulder_pitch": -0.2598076211353317,
+        "elbow_pitch": 0.5196152422706634,
+        "wrist_pitch": -0.2598076211353317,
+        "wrist_roll": -0.5196152422706634,
+        "gripper": 0.1750000000000002
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.009763551368806762,
+        "elbow_pitch": 0.022557979076799874,
+        "wrist_pitch": 7.446082387492308e-05,
+        "wrist_roll": -4.672646481169281e-19,
+        "gripper": 2.3540692236707428e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.008060515172153003,
+        "elbow_pitch": 0.02589910390797882,
+        "wrist_pitch": 0.001777497020528684,
+        "wrist_roll": -5.935652510707625e-19,
+        "gripper": 2.3540692236707428e-05
+      }
+    },
+    {
+      "pose": "demo_21",
+      "angles_rad": {
+        "base_yaw": -0.35355339059327384,
+        "shoulder_pitch": -0.2121320343559643,
+        "elbow_pitch": 0.4242640687119286,
+        "wrist_pitch": -0.2121320343559643,
+        "wrist_roll": -0.4242640687119286,
+        "gripper": 0.10251262658470842
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0076284547205008445,
+        "elbow_pitch": 0.01886148878625896,
+        "wrist_pitch": 0.00043454179018497115,
+        "wrist_roll": 3.753305728845332e-19,
+        "gripper": 1.3836192608068593e-05
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0058404018617207966,
+        "elbow_pitch": 0.021992079414426588,
+        "wrist_pitch": 0.0022225946489650185,
+        "wrist_roll": 4.573028623184805e-19,
+        "gripper": 1.3836192608068593e-05
+      }
+    },
+    {
+      "pose": "demo_22",
+      "angles_rad": {
+        "base_yaw": -0.2500000000000002,
+        "shoulder_pitch": -0.15000000000000013,
+        "elbow_pitch": 0.30000000000000027,
+        "wrist_pitch": -0.15000000000000013,
+        "wrist_roll": -0.30000000000000027,
+        "gripper": 0.04689110867544657
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.004821674410467074,
+        "elbow_pitch": 0.013980077384978525,
+        "wrist_pitch": 0.0009011939332412908,
+        "wrist_roll": 5.224729922572041e-20,
+        "gripper": 6.337697353888165e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0029473042188026344,
+        "elbow_pitch": 0.01680733982836087,
+        "wrist_pitch": 0.0027755641249057285,
+        "wrist_roll": 6.88746056548227e-20,
+        "gripper": 6.337697353888165e-06
+      }
+    },
+    {
+      "pose": "demo_23",
+      "angles_rad": {
+        "base_yaw": -0.12940952255126079,
+        "shoulder_pitch": -0.07764571353075647,
+        "elbow_pitch": 0.15529142706151294,
+        "wrist_pitch": -0.07764571353075647,
+        "wrist_roll": -0.15529142706151294,
+        "gripper": 0.011925960798826168
+      },
+      "overlaps": [],
+      "gravity_torque_empty_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": -0.0015406242484059074,
+        "elbow_pitch": 0.008218658440047046,
+        "wrist_pitch": 0.00142990161336924,
+        "wrist_roll": 9.926073851613957e-20,
+        "gripper": 1.6124388079668041e-06
+      },
+      "gravity_torque_10g_Nm": {
+        "base_yaw": 0.0,
+        "shoulder_pitch": 0.0003977660212202514,
+        "elbow_pitch": 0.010651659262845392,
+        "wrist_pitch": 0.003368291882995399,
+        "wrist_roll": 1.124654673424298e-19,
+        "gripper": 1.6124388079668041e-06
+      }
+    }
+  ],
+  "all_sampled_poses_clear": true,
+  "static_torque_sweep_10g_max_abs_Nm": {
+    "base_yaw": 0.0,
+    "shoulder_pitch": 0.23959632680819676,
+    "elbow_pitch": 0.15959504581246547,
+    "wrist_pitch": 0.06593441138686655,
+    "wrist_roll": 0.00332964050942147,
+    "gripper": 0.00013520730590741773
+  },
+  "limits": "Servo envelope approximations; mesh/hardware fit and full swept collision space not certified. Solid PLA mass; uniform motor inertia; no cables/fasteners/friction/dynamics."
+}

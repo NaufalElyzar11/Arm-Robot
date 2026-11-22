@@ -1,0 +1,17 @@
+{
+  "name": "ax12_compact_v1",
+  "status": "prototype_fit_test_required",
+  "units": "mm",
+  "base_axis_height": 55.0,
+  "shoulder_height_above_base_axis": 44.0,
+  "upper_axis_distance": 65.0,
+  "forearm_axis_distance": 65.0,
+  "wrist_roll_axis_distance": 65.0,
+  "mg90s_axis_height": 28.0,
+  "finger_length": 36.0,
+  "ax12_mass_kg": 0.0546,
+  "mg90s_mass_kg": 0.0134,
+  "pla_density_kg_per_mm3": 0.00000124,
+  "initial_test_object_mass_kg": 0.01,
+  "note": "10 g is a selected first test case, not user-specified payload or validated capacity. Printed mass assumes solid PLA; fasteners and cables are not included."
+}

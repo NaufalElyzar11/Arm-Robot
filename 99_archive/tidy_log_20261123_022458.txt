@@ -1,0 +1,38 @@
+﻿=== MODE: APPLY (file akan dipindah) ===
+  [pindah] ROS2\.venv-cad  ->  _to_delete\ROS2_venv-cad
+  [pindah] ROS2\compact_arm\ros2_ws\build  ->  _to_delete\compact_arm_ros2_ws_build
+  [pindah] ROS2\compact_arm\ros2_ws\install  ->  _to_delete\compact_arm_ros2_ws_install
+  [pindah] ROS2\compact_arm\ros2_ws\log  ->  _to_delete\compact_arm_ros2_ws_log
+  [pindah] ROS2\compact_arm\output\ros_logs  ->  _to_delete\compact_arm_ros_logs
+  [pindah] ROS2\compact_arm\output\ros_logs_gui  ->  _to_delete\compact_arm_ros_logs_gui
+  [pindah] ROS2\compact_arm\__pycache__  ->  _to_delete\compact_arm_pycache
+  [pindah] ROS2\mesh_analysis\__pycache__  ->  _to_delete\mesh_analysis_pycache
+  [pindah] ROS2\mesh_analysis\separated_stl.zip  ->  _to_delete\mesh_analysis_separated_stl.zip
+  [pindah] widowx_ax12_hybrid_base\__pycache__  ->  _to_delete\hybrid_base_pycache
+  [pindah] MX-28_Arm-mk2.zip  ->  _to_delete\MX-28_Arm-mk2_rusak_224byte.zip
+  [pindah] AX12A_WidowX_Full_STL  ->  01_design\stl
+  [pindah] AX12A_WidowX_Full_STEP  ->  01_design\step
+  [pindah] widowx_ax12_hybrid_base  ->  01_design\cad_scripts
+  [pindah] 01_design\cad_scripts_requirements.txt  ->  01_design\cad_scripts\requirements.txt
+  [pindah] Robot Arm For AX-12A Dynamixel Actuators - 166430  ->  01_design\source\ax12a_arm_thingiverse_166430
+  [pindah] widowx-mkii-robotic-arm  ->  99_archive\reference_designs\widowx_mkii_robotic_arm
+  [pindah] MX-28_Arm-mk2 (1)  ->  99_archive\reference_designs\mx28_arm_mk2
+  [pindah] ROS2\MX-28_Arm-mk2.stl  ->  99_archive\reference_designs\mx28_arm_mk2_stl\MX-28_Arm-mk2.stl
+  [pindah] pxpincher_ros-kinetic-devel\pxpincher_ros-kinetic-devel  ->  99_archive\reference_designs\pxpincher_ros_kinetic
+  [pindah] ROS2\reference_widowx  ->  99_archive\reference_designs\widowx_arm_description_ros1
+  [pindah] ROS2\compact_arm  ->  99_archive\old_experiments\compact_arm
+  [pindah] ROS2\mesh_analysis  ->  99_archive\old_experiments\mesh_analysis
+  [pindah] ROS2\BUILD_CONSTRAINTS.md  ->  99_archive\old_experiments\BUILD_CONSTRAINTS_lama.md
+  [pindah] ARM.rar  ->  99_archive\original_downloads\ARM.rar
+  [pindah] MX-28_Arm-mk2 (1).zip  ->  99_archive\original_downloads\MX-28_Arm-mk2 (1).zip
+  [pindah] pxpincher_ros-kinetic-devel.zip  ->  99_archive\original_downloads\pxpincher_ros-kinetic-devel.zip
+  [pindah] Robot Arm For AX-12A Dynamixel Actuators - 166430.zip  ->  99_archive\original_downloads\Robot Arm For AX-12A Dynamixel Actuators - 166430.zip
+  [pindah] widowx-mkii-robotic-arm.zip  ->  99_archive\original_downloads\widowx-mkii-robotic-arm.zip
+  [hapus folder kosong] pxpincher_ros-kinetic-devel
+  [hapus folder kosong] ROS2
+  [patch path] 01_design\cad_scripts\build_full_robot_package.py
+  [patch path] 01_design\cad_scripts\build_hybrid_base.py
+  [patch path] 01_design\cad_scripts\render_preview.py
+
+Selesai: 29 dipindah, 0 dilewati, 0 gagal.
+Cek isi _to_delete\ lalu hapus manual jika sudah yakin (+/- 0.5 GB).

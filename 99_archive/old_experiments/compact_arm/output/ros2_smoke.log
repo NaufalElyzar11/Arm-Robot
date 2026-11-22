@@ -1,0 +1,11 @@
+[INFO] [launch]: All log files can be found below /mnt/f/Projects/Robot Arm/ROS2/compact_arm/output/ros_logs/2026-10-06-17-50-55-832445-MSI-609
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [623]
+[INFO] [demo_joint_states.py-2]: process started with pid [624]
+[robot_state_publisher-1] [INFO] [1791280256.181052839] [robot_state_publisher]: Robot initialized
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [demo_joint_states.py-2]: sending signal 'SIGINT' to process[demo_joint_states.py-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791280267.689878055] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 623]
+[INFO] [demo_joint_states.py-2]: process has finished cleanly [pid 624]
